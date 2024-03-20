@@ -1,0 +1,126 @@
+$plex-mono-font:"IBM Plex Mono", monospace;
+@mixin btn($bg-color, $padding, $color) {
+    font-size: 1.4rem;
+    font-family: "IBM Plex Mono", monospace;
+    border-radius: 4px;
+    background-color: $bg-color;
+    padding: $padding;
+    border: 1px solid #13390D;
+    text-decoration: none;
+    font-weight: 500;
+    color:$color ;
+    
+  }
+  .join{
+    display: flex;
+  }
+section{
+    margin-left: 165px;
+    display: flex;
+    // width: 100%;
+    // height: 100%;
+
+    // flex-wrap: wrap;
+   
+   .content{
+    margin-top: 106px;
+   
+    
+    h1{
+        font-weight: 700;
+        font-size: 6rem;
+        color: #13390D;
+        line-height: 8rem;
+    }
+    p{
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #13390DB2;
+        line-height: 2.08rem;
+        margin-top: 20px;
+        margin-bottom: 60px;
+
+    }
+    a{
+        
+        @include btn(#13390D, 21px 70px 21px 71px, #FFFFFF)
+        
+    }
+   }
+   .image{
+    width: 100%;
+    
+   
+   }
+    
+}
+@media(max-width:1200px){
+    .image img{
+        width: 100%;
+        // height: auto;
+    }
+    .image{
+        display: flex;
+        align-items: center;
+    }
+    .content{
+        width: 100%;
+        // height: auto;
+        
+        
+        
+    }
+    section{
+        margin-left: 20px;
+    }
+    // h1{
+    //     font-size: 5rem;
+    // }
+    
+}
+@media(max-width:800px){
+    .content{
+        
+        h1{
+            font-size: 4.5rem;
+            
+        }
+    }
+    .content{
+        margin-top: 40px;
+    }
+    section{
+        flex-wrap: wrap;
+    }
+    .join{
+        justify-content: center;
+    }
+    .image img{
+        transform: translate(-50px);
+    }
+}
+@media(max-width:450px){
+    .content{
+        
+    }
+    .image img{
+        transform: translate(-20px);
+    }
+    h1{
+        font-size: 3rem;
+       
+        line-height: 2rem;
+        font-weight: 500;
+    }
+    section{
+        margin-left: 0;
+        .content{
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width:450px){
+    h1{
+        // font-size: 3rem;
+    }
+}

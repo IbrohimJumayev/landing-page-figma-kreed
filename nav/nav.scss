@@ -1,0 +1,77 @@
+$plex-mono-font: "IBM Plex Mono", monospace;
+$bg-font: white;
+@mixin btn($bg-color, $padding, $color) {
+  font-size: 1.4rem;
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 4px;
+  background-color: $bg-color;
+  padding: $padding;
+  border: 1px solid #13390D;
+  text-decoration: none;
+  font-weight: 500;
+  color:$color ;
+  display: block;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:30px 165px 0 ;
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .ham-menu{
+        display: none;
+    }
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    .navigation {
+      ul {
+        display: flex;
+        gap: 40px;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: #13390D;
+          }
+        }
+      }
+    }
+    .contact{
+        a {
+            @include btn(transparent , 12px 22px 12px 24px,#13390D)
+           
+        }
+    }
+  }
+}
+@media (max-width:1000px){
+    nav{
+        margin-inline: 30px;
+        .navbar{
+            gap: 30px;
+            .navigation ul{
+                gap: 30px;
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .navigation{
+        display: none;
+    }
+    .ham-menu{
+        display: flex;
+    }
+    nav{
+        margin-inline: 10px;
+        margin-top: 10px;
+    }
+}

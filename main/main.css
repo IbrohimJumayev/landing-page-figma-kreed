@@ -1,0 +1,16 @@
+@import url(../nav/nav.css);
+@import url(../section/section.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #6DFC56;
+}
+
+html {
+  font-size: 10px;
+}/*# sourceMappingURL=main.css.map */

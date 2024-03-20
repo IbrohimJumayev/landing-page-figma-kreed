@@ -1,0 +1,23 @@
+@import url(../nav/nav.css);
+@import url(../section/section.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #6DFC56;
+}
+html{
+    font-size: 10px;
+}
+@mixin btn($bg-color,$padding){
+    font-size: 1.4rem;
+    font-family: "IBM Plex Mono", monospace;
+    border-radius: 4px;
+    background-color: $bg-color;
+    padding: $padding;
+}

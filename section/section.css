@@ -1,0 +1,88 @@
+.join {
+  display: flex;
+}
+
+section {
+  margin-left: 165px;
+  display: flex;
+}
+section .content {
+  margin-top: 106px;
+}
+section .content h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  color: #13390D;
+  line-height: 8rem;
+}
+section .content p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: rgba(19, 57, 13, 0.6980392157);
+  line-height: 2.08rem;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+section .content a {
+  font-size: 1.4rem;
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 4px;
+  background-color: #13390D;
+  padding: 21px 70px 21px 71px;
+  border: 1px solid #13390D;
+  text-decoration: none;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+section .image {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .image img {
+    width: 100%;
+  }
+  .image {
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    width: 100%;
+  }
+  section {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .content h1 {
+    font-size: 4.5rem;
+  }
+  .content {
+    margin-top: 40px;
+  }
+  section {
+    flex-wrap: wrap;
+  }
+  .join {
+    justify-content: center;
+  }
+  .image img {
+    transform: translate(-50px);
+  }
+}
+@media (max-width: 450px) {
+  .image img {
+    transform: translate(-20px);
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+  section {
+    margin-left: 0;
+  }
+  section .content {
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=section.css.map */
